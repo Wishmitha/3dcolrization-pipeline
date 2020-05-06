@@ -5,7 +5,6 @@
 # examples/Python/Advanced/color_map_optimization.py
 
 import open3d as o3d
-from trajectory_io import *
 import os, sys
 sys.path.append("Utility")
 
