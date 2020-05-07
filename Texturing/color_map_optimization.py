@@ -11,7 +11,7 @@ sys.path.append("Utility")
 from file import *
 
 
-path = os.path.realpath("Data/fountain/fountain_small")
+path = os.path.realpath("Data/burgers/burgers-k345")
 debug_mode = False
 
 if __name__ == "__main__":
@@ -22,7 +22,7 @@ if __name__ == "__main__":
     depth_image_path = get_file_list(os.path.join(path, "depth/"),
                                      extension=".png")
     color_image_path = get_file_list(os.path.join(path, "image/"),
-                                     extension=".jpg")
+                                     extension=".png")
     assert (len(depth_image_path) == len(color_image_path))
     for i in range(len(depth_image_path)):
         depth = o3d.io.read_image(os.path.join(depth_image_path[i]))
