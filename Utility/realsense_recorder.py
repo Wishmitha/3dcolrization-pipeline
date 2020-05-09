@@ -8,6 +8,7 @@ from os.path import exists, join
 import shutil
 import json
 from enum import IntEnum
+import time
 
 try:
     # Python 2 compatible
@@ -61,7 +62,7 @@ if __name__ == "__main__":
         description=
         "Realsense Recorder. Please select one of the optional arguments")
     parser.add_argument("--output_folder",
-                        default='realsense/attempt2/',
+                        default='realsense/attempt2'+str(time.time()),
                         help="set output folder")
     parser.add_argument("--record_rosbag",
                         action='store_true',
@@ -105,7 +106,7 @@ if __name__ == "__main__":
         # note: using 640 x 480 depth resolution produces smooth depth boundaries
         #       using rs.format.bgr8 for color image format for OpenCV based image visualization
         config.enable_stream(rs.stream.depth, 1280, 720, rs.format.z16, 30)
-        config.enable_stream(rs.stream.color, 640, 480, rs.format.bgr8, 30)
+        config.enable_stream(rs.stream.color, 1280, 720, rs.format.bgr8, 30)
         #config.enable_stream(rs.stream.depth, 1280, 720, rs.format.z16, 30
         #config.enable_stream(rs.stream.color, 640, 480, rs.format.bgr8, 30) 
         if args.record_rosbag:
