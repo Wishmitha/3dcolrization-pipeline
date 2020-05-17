@@ -23,18 +23,17 @@ Below are some examples showing how to run the <code>group_color_transfer.py</co
 
 <code>$ python group_color_transfer.py --input_dir inputs/fountain_all --style_image style/fountain/night2.jpg --output_dir results/fountain_all_night2</code>
 
-<div style="display: flex;">
-	<div style="width:32%; text-align:center">
-		<img src="docs/images/fountain_day.jpg" width="32%">
-		<p>Input Image</p>
-	</div>
-	<div style="width:32%; text-align:center">
-		<img src="docs/images/fountain_night_style.jpg" width="32%" height="245">
-		<p>Color Style Image</p>
-	</div>
-	<div style="width:32%; text-align:center">
-		<img src="docs/images/fountain_night.png" width="32%">
-		<p>Re-colorized Image</p>
-	</div>
-</div>
+
+<img src="docs/images/fountain_day.jpg" width="32%">
+<p>Input Image</p>
+  
+    
+<img src="docs/images/fountain_night_style.jpg" width="32%" height="245">
+<p>Color Style Image</p>
+  
+   
+<img src="docs/images/fountain_night.png" width="32%">
+<p>Re-colorized Image</p>
+  
+
 
