@@ -25,15 +25,16 @@ Below are some examples showing how to run the <code>group_color_transfer.py</co
 
 <div style="display: flex;">
 	<div style="width:32%; text-align:center">
-		<img src="docs/images/fountain_day.jpg">
-		Input Image
+		<img src="docs/images/fountain_day.jpg" width="32%">
+		<p>Input Image</p>
 	</div>
 	<div style="width:32%; text-align:center">
-		<img src="docs/images/fountain_night_style.jpg" height="245">
-		Color Style Image
+		<img src="docs/images/fountain_night_style.jpg" width="32%" height="245">
+		<p>Color Style Image</p>
 	</div>
 	<div style="width:32%; text-align:center">
-		<img src="docs/images/fountain_night.png">
-		Re-colorized Image
+		<img src="docs/images/fountain_night.png" width="32%">
+		<p>Re-colorized Image</p>
 	</div>
 </div>
+
