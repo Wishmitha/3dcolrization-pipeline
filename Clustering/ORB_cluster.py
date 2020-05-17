@@ -184,7 +184,7 @@ def copy_dep_images(a):
 
     for path in output_paths:
         name = get_name(path)
-        source = os.path.join(input_depth_dir,(name + ".png"))
+        source = os.path.join(input_depth_dir,(name + ".png")) #please make sure all depth images are of png format
         dest = os.path.join(output_depth_dir,(name + ".png"))
         shutil.copyfile(source, dest) 
 
