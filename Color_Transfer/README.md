@@ -14,13 +14,15 @@ For more information, along with a detailed code review, [take a look at this po
 #Install
 To install, make sure you have installed NumPy and compiled OpenCV with Python bindings enabled.
 
-From there, there easiest way to install is via pip:
+<!-- From there, there easiest way to install is via pip: -->
 
-<code>$ pip install color_transfer</code>
+<!-- <code>$ pip install color_transfer</code> -->
 
 #Examples
-Below are some examples showing how to run the <code>group_color_transfer.py</code> demo and the associated color transfers between images.
+Below are some examples showing how to run the <code>group_color_transfer.py</code> demo and the associated color transfers between images.  
 
 <code>$ python group_color_transfer.py --input_dir inputs/fountain_all --style_image style/fountain/night2.jpg --output_dir results/fountain_all_night2</code>
-![Original daytime fountain](docs/images/fountain_day.jpg?raw=true)
-![Fountain with nighttime style](docs/images/fountain_night.png?raw=true)
+  
+<img src="docs/images/fountain_day.jpg" width="32%" >
+<img src="docs/images/fountain_night_style.jpg" width="32%" height="245">
+<img src="docs/images/fountain_night.png" width="32%">
