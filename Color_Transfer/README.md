@@ -23,6 +23,6 @@ Below are some examples showing how to run the <code>group_color_transfer.py</co
 
 <code>$ python group_color_transfer.py --input_dir inputs/fountain_all --style_image style/fountain/night2.jpg --output_dir results/fountain_all_night2</code>
   
-<img src="docs/images/fountain_day.jpg" width="32%" >
-<img src="docs/images/fountain_night_style.jpg" width="32%" height="245">
-<img src="docs/images/fountain_night.png" width="32%">
+<img src="docs/images/fountain_day.jpg" width="30%" >
+<img src="docs/images/fountain_night_style.jpg" width="30%" height="245">
+<img src="docs/images/fountain_night.png" width="30%">
