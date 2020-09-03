@@ -10,15 +10,19 @@ import numpy as np
 
 from file import *
 
-origin_path = os.path.realpath("../Data/burgers/burgers-full") #path orignal set of images
-clustered_path = os.path.realpath("../Data/burgers/burgers-k345") #path for clustered images
+origin_path = os.path.realpath("../Data/totemple/totemple_all") #path orignal set of images
+clustered_path = os.path.realpath("../Data/totemple/totemple_col") #path for clustered images
 
 #depth_image_path = get_file_list(os.path.join(path, "depth/"), extension=".png")
 clustered_image_list = get_file_list(os.path.join(clustered_path, "image/"),extension=".png")
 
 clustered_img_indexes = []
 for img in clustered_image_list:
-    clustered_img_indexes.append(int(img.split('.')[0].split('/')[-1].strip("0")))
+    if '-' not in img:
+        clustered_img_indexes.append(int(img.split('.')[0].split('/')[-1].strip("0")))
+    else:
+        clustered_img_indexes.append(int(img.split('.')[0].split('/')[-1].split('-')[0].strip("0")))
+        print(clustered_img_indexes)
 
 #clustered_img_indexes = np.array(clustered_img_indexes)
 
