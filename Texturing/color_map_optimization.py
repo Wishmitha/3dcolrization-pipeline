@@ -5,13 +5,16 @@
 # examples/Python/Advanced/color_map_optimization.py
 
 import open3d as o3d
-import os, sys
-sys.path.append("Utility")
-
+import os
 from file import *
+#from Texturing.file import *
+
+#sys.path.append("Utility")
+
+#from file import *
 
 
-path = os.path.realpath("Data/fountain/fountain_small_original")
+path = os.path.realpath("../Data/BlendedMVS/building_1")
 debug_mode = False
 
 if __name__ == "__main__":
@@ -21,7 +24,7 @@ if __name__ == "__main__":
     rgbd_images = []
     depth_image_path = get_file_list(os.path.join(path, "depth/"),
                                      extension=".png")
-    color_image_path = get_file_list(os.path.join(path, "image_resized/"),
+    color_image_path = get_file_list(os.path.join(path, "image/"),
                                      extension=".jpg")
     assert (len(depth_image_path) == len(color_image_path))
     for i in range(len(depth_image_path)):
